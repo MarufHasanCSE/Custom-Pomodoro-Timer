@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pomodoro-container">
+    <div class="timer-display">
+        <svg class="progress-ring" width="200" height="200">
+            <circle class="progress-ring__circle" stroke="white" stroke-width="8" fill="transparent" r="90" cx="100" cy="100"/>
+        </svg>
+        <div id="time-left">25:00</div>
+    </div>
+    
+    <div class="controls">
+        <button id="start-btn">Start</button>
+        <button id="reset-btn">Reset</button>
+    </div>
+    
+    <div class="mode-buttons">
+        <button onclick="setTimer(25)">Work</button>
+        <button onclick="setTimer(5)">Break</button>
+    </div>
+</div>
+    
+</body>
+</html>
