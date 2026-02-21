@@ -1,0 +1,43 @@
+body {
+    background: #e74c3c; /* Productivity Red */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    transition: background 0.5s;
+}
+
+.pomodoro-container { text-align: center; color: white; }
+
+.timer-display {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#time-left {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.progress-ring__circle {
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 565.48; /* Circumference: 2 * PI * r */
+    stroke-dashoffset: 0;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
