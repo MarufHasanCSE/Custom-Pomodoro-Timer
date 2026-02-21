@@ -1,5 +1,5 @@
 body {
-    background: #e74c3c; /* Productivity Red */
+    background: #e7473c; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@ body {
     transition: stroke-dashoffset 0.35s;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
-    stroke-dasharray: 565.48; /* Circumference: 2 * PI * r */
+    stroke-dasharray: 565.48; 
     stroke-dashoffset: 0;
 }
 

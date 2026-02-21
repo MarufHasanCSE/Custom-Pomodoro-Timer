@@ -1,5 +1,5 @@
 let timer;
-let timeLeft = 25 * 60; // 25 minutes in seconds
+let timeLeft = 25 * 60; 
 let totalTime = 25 * 60;
 const display = document.getElementById('time-left');
 const circle = document.querySelector('.progress-ring__circle');
@@ -9,14 +9,13 @@ function updateDisplay() {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
     display.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-    
-    // Update SVG Ring
+ 
     const offset = circumference - (timeLeft / totalTime) * circumference;
     circle.style.strokeDashoffset = offset;
 }
 
 function startTimer() {
-    if (timer) return; // Prevent double clicking
+    if (timer) return; 
     
     timer = setInterval(() => {
         timeLeft--;
@@ -42,4 +41,4 @@ function setTimer(minutes) {
 document.getElementById('start-btn').addEventListener('click', startTimer);
 document.getElementById('reset-btn').addEventListener('click', () => setTimer(25));
 
-updateDisplay(); // Initialize
+updateDisplay(); 
